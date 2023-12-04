@@ -1,0 +1,53 @@
+1) TestClass.java
+
+- int i = 0 is not final and its not a compile time constant so compiler won't compile
+
+
+2) TestClass2.java
+
+- if you put an else statement then will compile because compiler is sure that val will be initialized
+
+
+3) TestClass3.java
+
+- add 2 if statement but compiler still not allow
+- We know val will always be initialized because we execute the code mentally but compiler don't know
+
+
+4) TestClass4.java
+
+- we put int i=0 as final
+- so now compiler know i will always be 0 and val will be initialized
+
+5) cast1.java
+
+- what happened when you assign int to byte within the range of byte and also outside the range of byte
+
+
+6) dataType.java
+
+- automatic casting won't work for method call like it work for assignment
+- for example passing int into a method with short parameter 
+
+7) dataType2.java
+
+- assigning byte to char where byte is positive or negative
+
+
+8) dataType3.java
+
+- You can only assign a byte to char if you do casting
+
+
+9) dataType4.java
+
+- You can only assign char to byte if you do casting
+
+
+10) all.java
+
+- all the examples from OCP book . don't really understand
+
+11) referenceFinal. java
+
+- what happens when you mark a reference object as final ?

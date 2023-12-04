@@ -1,0 +1,79 @@
+1) pattern.java
+
+- we see how it is without Pattern matching
+
+
+2) pattern2.java
+
+- here we apply pattern matching using instanceof
+
+
+3) reassignPattern.java
+
+- it is bad idea to reassign value in the pattern variable
+
+
+4) pattern3.java
+
+- we can do pattern variable with an expression
+
+
+5) subtype.java
+
+- pattern variable must be a subtype of the variable on the left side, they also cannot be the same type
+- < main type > instanceof < subtype >  - must follow this format if pattern variable, if not then can terbalik
+
+
+6) flowScoping.java
+
+- Flow scoping means the pattern variable is only in scope in the if statement when the compiler can definitively determine its type
+
+
+7)  flowScoping2.java
+- pattern variable is only in scope inside the if statement block
+
+
+8) flowScoping3.java
+
+- This will compile
+- It is possible to use a pattern variable outside of the if statement but only when the compiler can definitively determine its type
+
+9) switchExpression.java
+
+- can put results of switch Expression into a variable
+- semi colon is required after each case value and after the switch expression ends
+
+10) switchExpression2.java
+
+- return a value in method using switch expression
+- must have a default case if not cannot compile because the switch expression return a value
+
+
+11) switchExpression3.java
+- Only don't need default branch if the switch expression does not return a value or assign it to a variable
+
+
+12) switchDataType.java
+- Switch expression should return an int so case block cannot have long, null and String
+- can compile if you change the return variable to type var
+
+
+13) caseBlock.java
+
+- switch support both expression and a case block
+- caseBlock must have {  } and also must have yield if the switch expression returns a value
+- semi colon must be inside { }  braces
+
+
+14) caseBlock2.java
+- if your switch expression don't return a result then there is no need for yield statement
+
+
+15) switchEnum.java
+
+- You must always cover all possible input value for switch expression, or else you must use default branch
+- You have cover all the value inside the enum, so you don't need default branch
+
+
+
+

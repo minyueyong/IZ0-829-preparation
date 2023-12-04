@@ -1,0 +1,20 @@
+1)  Account.java is in a package called accounting
+
+2)  javac Account.java will create the class file at the same location as Account.java
+
+3) But when you run java Account , there will be error because its expect to find Account.class inside the 
+accounting directory according to the package name
+
+4) Should compile with javac -d . Account.java to create Account.class inside accounting directory
+
+5) The dot after -d option means current directory is the target directory for resulting output
+
+6) Run it with java -classpath . accounting.Account
+
+
+-d option   
+
+Sets the destination directory (or class output directory) for class files. If a class is part of a package, then javac puts the class file in a subdirectory that reflects the module name (if appropriate) and package name. The directory, and any necessary subdirectories, will be created if they do not already exist.
+
+
+-classpath

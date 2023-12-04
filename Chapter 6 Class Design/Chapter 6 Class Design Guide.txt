@@ -1,0 +1,75 @@
+1) finalClass.java
+
+- you cannot extend a class that is final 
+
+- Syntax is public final class, not public class final
+
+
+2) superthis.java
+
+- when super is use and when this is use
+
+
+3) constructors.java
+
+- constructors don't have return type 
+
+- constructors method parameter cannot include var
+
+
+4) constructors2.java
+
+- how to call a constructor from a constructor
+
+- this ( ) must be the first statement in the constructor
+
+
+5) constructorloop.java
+
+- constructor cannot call itself recursively
+
+
+6) constructorloop2.java
+
+- 2 constructor cannot call each other recursively
+
+
+7) super1.java
+
+- calling parent class constructor
+
+
+8) constructors3.java
+
+- If you didn't call this ( )  or super( )  as the first line of the constructor, compiler will add a constructor with a call to super( ) 
+
+- because this class didn't extend any class , so the super ( )  will be call to the Object class
+
+- every class extends Object class 
+
+
+9) superclass.java
+
+- Compiler won't add a no argument constructor if you already have a parameterized constructor
+
+- If you didn't call this ( )  or super( )  as the first line of the constructor, compiler will add a constructor with a call to super( ) 
+
+
+
+10) intialization.java
+
+- static initializer in parent class -> static initialization in child class -> main method
+
+- class is loaded only once even though the main ( ) method create 3 instances
+
+
+11) finalinstance.java
+
+- final instance variables must always be initialized
+
+- each constructors must initialized all final values. 
+
+
+12) initialization1.java
+
+

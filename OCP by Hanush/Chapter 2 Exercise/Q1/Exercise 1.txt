@@ -1,0 +1,16 @@
+Question
+_________
+
+Create classes in two different named packages. Define static and instance fields in one of theose classes and access those
+fields from the other class. See what happens when both the classes try to access the fields of each other
+
+
+Answer
+
+_______
+
+Class Two will import one package to use One class
+
+javac -d . *.java to create package for One and Two class
+
+java -cp . two.Two

@@ -1,0 +1,63 @@
+1) indent.java
+
+- demonstrate indent and strip indent
+
+2) translateEscape.java
+
+
+3) StringFormat.java
+
+
+4) isEmptyBlank.java
+
+
+5) StringDifference.java
+
+- Show how String is immutable but StringBuilder is not immutable
+
+
+6) StringBuilder1.java
+
+- both string print "abcdefg" because a and b both point to same reference
+
+
+7) equality.java
+
+
+8) equality2.java
+
+- use += will return a new String and assign to variable at the left
+- because its already assigning the result to a new variable concat = concat + "world" ,  unlike concat ( ) method 
+
+
+9) DateTime
+
+- all have now method
+
+
+10) DateTimeImmutable
+
+- date and time classes are immutable
+
+
+11) DateTime1
+
+- LocalDate don't have minutes so cannot use PlusMinutes
+
+
+12) periods.java
+
+- you can pass period to add to LocalDate
+
+
+13) periods1.java
+
+- you cannot chain method with periods
+
+
+14) stripIndent.java
+
+- using stripIndent in a string
+
+
+15) 

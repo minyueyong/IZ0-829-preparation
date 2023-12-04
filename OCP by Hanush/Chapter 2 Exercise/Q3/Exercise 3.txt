@@ -1,0 +1,6 @@
+Question
+________________
+
+
+Create a class Admin in package hr and another class TimeCard in package hr.reporting with a static method add () .
+Invoke the static method from the Admin class using different import statements

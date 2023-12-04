@@ -1,0 +1,141 @@
+1. signature.java
+
+- order of the method parameter matters
+
+- method with same parameter with different order are different methods
+
+- Same type of method parameter but with different parameter name does not compile
+
+2. finalObject
+
+- Object and array that are declared final cannot reassign their reference
+
+- but you can change their value
+
+
+3. finalObject2
+
+- final local variable won't compile if it may be reassign, have to add an else statement
+
+
+4. Bird.java
+
+- Bird have protected variable and methods
+
+- package pond.shore
+
+
+5. BirdWatcher.java
+
+- package pond.shore
+
+- BirdWatcher is same package as Bird so can access protected member in Birds
+
+
+6. Goose.java
+
+- Goose is in different package than Bird but it extends Bird
+
+- So Goose can access protected members in Bird
+
+- But Bird type variable won't work inside Goose class because didn't inherit from Bird class
+
+- package pond.goose
+
+
+7. GooseWatcher.java
+
+- package pond.duck
+
+- GooseWatcher is in different package than Goose and Bird
+
+- cannot access Bird method even though it extends Goose and Goose extends Bird
+
+
+8. staticNull.java
+
+- static variable is attached to the class , it will still work even if the object is reference to null
+
+
+9. staticFinal.java
+
+- final variable that didn't initialize with values won't compile
+
+
+10. BadStaticImport.java
+
+- static import is for import static members from a class ( variables and methods )
+
+
+11. A.java
+
+- Have 2 static members : hello and hello2 ( ) method
+
+
+12. B.java
+
+- Have 2 static members : hello and hello2 ( ) method
+
+
+13. C.java
+
+- use import static to import hello and hello2( ) , won't compile if import from both A.java and B.java 
+because will ambigouus
+
+
+14. passingObjects.java
+
+- java is pass by value but when you pass a reference variable then the value passed into the method will be change
+
+
+15. passByValue.java
+
+- demonstrate java pass by value
+
+
+16. badAutobox.java
+
+- here java need to convert the int into either Integer or long , either which won't fit into Long
+
+- the conversion can only be done once
+
+
+17. unboxingNull.java
+
+- unboxing a Character will null into char
+
+- can compile but will throw NullpointerException
+
+
+18. overloading.java
+
+- String and StringBuilder implement the CharSequence interface
+
+- so String will go for CharSequence
+
+
+19. autoboxOverload
+
+- if there are 2 overloaded methods, java will choose the one with the most specific parameter
+
+
+20. arraysAutobox.java
+
+- arrays don't do overloading autobox
+
+
+21. varargsOverload.java
+
+- int [] args and int ... args are both the same so its not considered as overloading
+
+
+22. overloading.java
+
+- two method with same name and same parameter but the parameter are in different order are considered as overloading
+
+
+
+
+
+
+

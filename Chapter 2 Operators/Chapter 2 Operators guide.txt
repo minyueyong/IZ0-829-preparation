@@ -1,0 +1,30 @@
+1)  bitwise.java
+
+- How to use bitwise operator ~
+
+- To find bitwise complement : multiply value by -1 and subtract 1
+
+
+2) incredecre.java
+
+- How post/pre increment/decrement operator are used
+
+
+3) cast.java
+
+- long reptile = ( long ) 192301398193810323; 
+
+
+4) instanceOf.java
+
+- Integer inherit both Number and Object
+
+- we check if Integer is instance Of Number
+
+5) Dog.java
+
+- using instanceOf with parent class and child class
+
+6) Dog2.java
+
+- using instanceOf with interface and class 
