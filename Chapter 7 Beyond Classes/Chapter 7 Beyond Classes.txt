@@ -1,0 +1,110 @@
+1) Biped
+
+- interface cannot be instantiated
+
+2) eightLegs
+
+- interface cannot be marked as final because then no class can implement it
+
+3) FieldMouse
+
+- Each time a class implement an interface , it must override it abstract methods
+- Members inside the interface will have implicit modifiers
+
+- If the overridden method returns a value, it must be the same or a subtype of the method in parent class , known as covariant return types
+
+
+4) Owl
+
+- interface can extend multiple interfaces
+
+5) CommonSeal
+
+- concrete class must implement all the abstract method it inherits
+
+- abstract class don't have to implement all the abstract method it inherits
+
+6) HarborSeal2
+
+- even if there is no concrete class, the abstract class still don't need to implement the abstract methods it inherited
+
+7) mixingClassInterface1
+
+- class cannot extend interface
+
+8) mixingClassInterface2
+
+- interface cannot extend class
+
+
+9) mixingClassInterface3
+
+- interface cannot implement another interface
+
+
+10) mixingClassInterface4
+
+- interface can extend another interface
+
+
+11) mixingClassInterface5
+
+- a class can extend another class
+
+
+12) mixingClassInterface6
+
+- a class cannot implement another class
+
+
+13) duplicateAbstract
+
+- can inherit 2 abstract methods that have compatible method declarations
+
+
+14)duplicateAbstract2
+
+- cannot inherit both abstract method because not covariant return type
+
+
+15) conflictingModifiers
+
+- cannot assign private when the implicit modifiers for constants is public static final 
+
+- cannot assign protected to an abstract method because implicit modifiers for constants is public abstract
+
+
+16) Husky 
+
+- you need to add abstract to an method without body in abstract class
+
+- thats because abstract class don't use implicit modifiers
+
+- while its ok if you don't add abstract to method without body in interface because interface uses implicit modifiers
+
+
+17) Georgette
+
+- because interface will add implicit modifiers public to its method. 
+
+- You cannot override with an access modifiers that is much narrower than public access modifiers
+
+
+18) defaultInterface
+
+- its optional to override default method inside interface
+
+
+19 ) duplicateDefault
+
+- if a class  implement 2 default interface method with same signature, it must override the default method
+
+
+20) callingDefault
+
+- if you have duplicate default method from 2 different interface, you can call them by <interface name>.super( ) . <default method name > 
+
+
+
+
+

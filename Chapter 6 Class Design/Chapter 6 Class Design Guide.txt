@@ -72,4 +72,299 @@
 
 12) initialization1.java
 
+Answer: 0-10-before constructor BestZoo -z- After constructor
+
+
+- initialize all static component ( also known as initialize class because static belongs to the class )
+
+0 - 10 
+
+- Go to main method and here we start initialize the instance
+
+Before constructor
+
+
+- instance initializer
+
+BestZoo
+
+- constructor
+
+z-
+
+- main method 
+
+after constructor
+
+
+13) initialization2.java
+
+Answer is Primate-Ape1-initializatin2
+
+if add statement before or after the constructor in main method
+
+Statement before - Primate-Ape1-initialization2 -Statement after
+
+
+14) initialization3.java
+
+0 Ready swimmy 1 Constructor
+
+- Static initializer 
+
+0
+
+- Go to main method
+
+Ready
+
+- initialize the instance ( instance initializer )
+
+swimmy 1
+
+- back to constructor
+
+Constructor
+
+
+15) Okapi.java ( hardest)
+
+Initialize Classes
+
+	1. If there is a superclass Y of X , then initialize class Y first
+
+
+	2. Process all static variable declarations in the order in which they appear in the class
+
+	3. Process all static initializers in the order in which they appear in the class
+
+Initialize static initializer of Class Giraffe -> A
+
+Initialize static initializer of Class Okapi -> F
+
+
+Initialize Instance
+	1. Initialize class X if it has not been previously initialized
+
+	2. If there is  a superclass Y of C , then initialize the instance of Y first
+
+Initialize instance of Class Giraffe
+
+	3. Process all instance variable declaration in the order in which they appear in the class
+
+	4. Process all instance initializers in the order in which they appear in the class
+
+Initialize instance initializers of Class Giraffe -> B
+
+	5. Initialize the constructor , including any overloaded constructors referenced with this ( ) 
+
+Initialize constructor of class Giraffe ->  E C 
+
+Repeat rules above but using instance of Class Okapi 
+
+Initialize Instance initializer of Class Okapi -> H
+
+Initialize constructor of Class Okapi -> G 
+
+Go back to main method and start Okapi ( 2 )
+
+Initialize instance of Class Giraffe 
+
+Initialize Instance Initializer of Class Giraffe -> B
+
+Initialize constructor of Class Giraffe -> E C
+
+Initialize Instance initializer of Class Okapi -> H
+
+Initialize constructor of Class Okapi -> G 
+
+
+16 ) override.java
+
+- demonstrate overriding
+
+- method in child class have same signature ( method name and parameter ) as parent class
+
+
+17) overrideaccess.java
+
+- access modifier in child class override method cannot be more restrictive than parent class method
+
+
+18) overrideexception.java
+
+- child class override method cannot have exception is parent class method don't have exception
+
+- child class override method cannot have a exception that is broader than the exception in parent method
+
+- IO Exception is broader than FileNotFoundException
+
+
+19) overridecovariant.java
+
+- String implement CharSequence hence String is a subtype of Char Sequence
+
+- so child class override method return type must be a subtype of the parent method
+
+
+20} redeclareprivate.java
+
+- Child class can override a parent method that is private
+
+- Since private method are not inherited, the child class has its own method
+
+
+21) hidingstatic.java
+
+- method override by child class must be static if the parent method is static
+
+- static method cannot be override, only hidden
+
+
+22) hidingstatic1.java
+
+- both parent class method and child class method must have static
+
+
+23) hidingvariables.java
+
+- variables in child class have same name as variables in parent class
+
+
+24) overridefinal.java
+
+- final method cannot be overriden
+
+
+25) abstract1.java
+
+- All class that extend an abstract class must override its abstract method
+
+
+26) abstract2.java
+
+- only abstract class can have abstract method
+
+- variable cannot mark abstract
+
+- concrete class that extends abstract class must override its abstract method
+
+- return type must be covariant with overridden method in abstract class
+
+
+27) abstract3.java
+
+- cannot instantiate abstract class
+
+
+28) abstract4.java
+
+- abstract class is not required to include any abstract method
+
+- but abstract method must be inside abstract class
+
+
+29) abstract5.java
+
+- concrete class cannot have abstract method
+
+
+30) abstract6.java
+
+- abstract keyword cannot be put after class or return type
+
+
+31) concrete.java
+
+- concrete class must inherit all abstract method from the abstract class
+
+- concrete class don't need inherit non abstract method from abstract class
+
+
+32) concrete1.java
+
+- first concrete class Rhino must implement all the inherited abstract method
+
+- second concreate class can choose not to implment all inherited abstract method
+
+
+33) abstractconstructor.java
+
+- constructor in the abstract class is call from the subclass
+
+- compiler insert no argument consructor to abstractconstructor and call Mammal constructor
+
+
+34) invalidabstract.java
+
+- all the invalid abstract declaration
+
+
+35) abstractfinal.java
+
+- abstract cannot be with final if its final then the method cannot be override
+
+
+36) abstractprivate.java
+
+- abstract cannot be with private because if its private then the method cannot be override
+
+
+37) abstractstatic.java
+
+- abstract cannot be with static
+
+- static method can only be hidden , not overriden
+
+
+38) immutable.java
+
+- malicious people can modify our data
+
+
+39) immutable1.java
+
+- same as immutable.java above. 
+
+- but this time malicious caller modify using constructors
+
+
+40) defensive.java
+
+- when assigning a favorite food inside the class , we create a copy and put it in the class
+
+- so malicious attacker can't use the secret reference to modify
+
+
+41 ) abstractExtend.java
+
+- abstract class that extends another abstract class don't need to provide implementation
+
+- only concrete class need to provide implementation for abstract class method
+
+
+42) hidingvariables2.java
+
+
+43 ) Child.java
+
+- In summary, both m and t point to the same object, but the type of the reference (Child or Person) affects the accessibility of methods and fields.
+
+- In this case, even though both m and t refer to the same object, if you have overridden methods in the Child class, 
+calling those methods on t will invoke the overridden versions in the Child class (polymorphism).
+
+
+44 ) Child2.java
+
+
+
+
+
+
+
+
+
+
+
+
 

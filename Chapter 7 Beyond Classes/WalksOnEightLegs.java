@@ -1,0 +1,1 @@
+public final interface eightLegs {}   //DOES NOT COMPILE because interface cannot be marked as final or else no class can implement it
