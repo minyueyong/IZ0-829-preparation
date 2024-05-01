@@ -18,19 +18,23 @@
 
 - interface can extend multiple interfaces
 
+
 5) CommonSeal
 
 - concrete class must implement all the abstract method it inherits
 
 - abstract class don't have to implement all the abstract method it inherits
 
+
 6) HarborSeal2
 
 - even if there is no concrete class, the abstract class still don't need to implement the abstract methods it inherited
 
+
 7) mixingClassInterface1
 
 - class cannot extend interface
+
 
 8) mixingClassInterface2
 
@@ -99,10 +103,139 @@
 
 - if a class  implement 2 default interface method with same signature, it must override the default method
 
+20) staticDefault
+
+- default interface method cannot be marked as static because its associated with the instance of the class implementing the interface
+
 
 20) callingDefault
 
-- if you have duplicate default method from 2 different interface, you can call them by <interface name>.super( ) . <default method name > 
+- if you have duplicate default method from 2 different interface, you can call them by <interface name>.super( ) . <default method name >
+
+
+21) staticInterface
+
+- if no access modifiers, static method in interface are implicityly public
+
+- You can access an interface static method  with the name of the interface
+
+
+22) staticInterface2
+
+- You can't inherit static interface method even though you implement its interface
+
+- you only can call static interface method by the interface name
+
+
+23) privateStatic
+
+- private static interface method may be called by any method within the interface definition
+
+
+24) privateinterface
+
+- static method cannot call private interface method
+
+
+25) interfaceAbstract
+
+- default and private non static method can abstract methods declared in the interface
+
+
+26) reviewInterface
+
+- ride ( ) - private & static method can access by any default or static method within interface declaration
+
+- getTrainName ( ) is abstract so can be access by default method
+
+- default method can access abstract and private static method
+
+- slowDown is a static method cannot access non static playHorn method
+
+- speedUp( )  can access private static method ride ( ) 
+
+
+27 ) simpleEnum
+
+- declare and use a simple Enum
+
+
+28) callingEnumValues
+
+- u can use values ( )  to call enum values
+
+- cannot compare enum to an integer
+
+
+29) retrievingEnum
+
+- use valueOf() to retrieve an enum from String
+
+
+30) enumSwitch
+
+- using enum in switch statements
+
+
+31) enumSwitchWrong
+
+- cannot use int value to compare enum value
+
+- cannot use Enum Season.Winter inside switch statement 
+
+
+32) enumConstructor
+
+- enum constructor is only call once when you call the enum 
+
+33) enumAbstract
+
+- all enum must override the abstract method
+
+
+34) combineEnum
+
+- enum have both constructor and abstract method
+
+
+35) defaultEnum
+
+- we create a default method so that not all enum have to provide implementation for the method
+
+- other enum can provide their special case implementation if they want
+
+
+36) enumInterface
+
+- enum can implement interface
+
+
+37) sealClass
+
+- Only permitted classes can extend the sealed class
+
+- cannot extend final class
+
+- any class can extend a non sealed class
+
+
+38) sealClass2
+
+- its sealed class, not class sealed
+
+
+39) sealClass3
+
+- DOES NOT COMPILE because subclass did not extend the sealed class even though its already permitted
+
+
+40) Emperor.java Penguin.java
+
+
+
+
+
+
 
 
 

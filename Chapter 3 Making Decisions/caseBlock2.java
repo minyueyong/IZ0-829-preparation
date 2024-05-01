@@ -14,14 +14,14 @@ public class caseBlock2{
 				if ( length > 10 ) yield "Blobfish";
 				else yield "Green";
 			}
-			case 4 -> {  "hello" ;}       DOES NOT COMPILE because case block must have yield statement if switch expression 
+			case 4 -> {  "hello" ;}       //DOES NOT COMPILE because case block must have yield statement if switch expression
 							//  returns a value
 
 			case 5-> { }             //DOES NOT COMPILE because need yield if switch expression returns a value
 
 			case 6 -> {
 
-				if (  length > 10 ) yield "Blobfish";          //DOES NOT COMPILE because it didn't yield
+				//if (  length > 10 ) yield "Blobfish";          //DOES NOT COMPILE because it didn't yield
 			}
 			
 			default -> "SwordFish";

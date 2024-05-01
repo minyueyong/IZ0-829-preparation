@@ -1,7 +1,7 @@
 interface isColdBlooded {
 
 	boolean hasScales ( ) ;
-	default double getTemperature ( ) {
+	 default double getTemperature ( ) {
 		return 10.0;
 	}
 }

@@ -19,7 +19,7 @@ public class Dog extends Animal {
 
 		//Dog doggie = new Animal ( );
 
-		Dog doggie = new Dog ( )
+		Dog doggie = new Dog ( );
 	
 
 
