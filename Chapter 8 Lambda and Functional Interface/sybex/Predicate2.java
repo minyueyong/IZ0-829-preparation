@@ -2,7 +2,7 @@
 
 BiPredicate is often used for filtering and matching
 
-takes 2 parameter and return boolean
+takes 2 parameter and return premitive boolean
 
 @FunctionInterface
 

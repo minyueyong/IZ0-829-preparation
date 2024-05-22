@@ -1,0 +1,54 @@
+Lambda Example :
+
+1) CheckTrait interface
+    - have 1 abstract method
+
+2)  CheckIfHopper class
+   - implement CheckTrait interface and override its abstract method by providing implementation
+
+3)  TraditionalSearch class
+   - pass a Lambda that provide the implementation to checkTrait interface
+   - Jave will match the lambda provided to the abstract method
+   - cannot use assign lambda to var
+
+ 4) TraditionalSearchLambda class
+
+ ------------------------------------------------------------------------------------------------------
+
+ Valid Lambda:
+
+ 5) validLambda interface
+    - abstract method that take in 1 parameter
+
+ 6) validLambda2 interface
+    - abstract method that take in 2 parameter
+
+ 7) validLambdas
+    - uses validLambda interface
+    - if have parameter type , then must have parentheses on the left
+    - if have curly braces , then must have semi colon and return statement on the right
+    - if have curly braces & return statement , then must have semi colon inside the curly braces
+
+ 8) validLambdas2
+    - uses validLambda2 interface
+    - if have 2 parameters , then must have parentheses on the left
+
+ ----------------------------------------------------------------------------------------------
+
+ Coding Functional Interfaces:
+
+ 9) functionalInterface interface
+    - an interface that contains a single abstract method
+
+ --------------------------------------------------------------------------------------------------
+
+ Method References
+
+ 10) LearnToSpeak interface
+    - have 1 abstract method that take in a String
+
+ 11) Duckling
+
+
+
+

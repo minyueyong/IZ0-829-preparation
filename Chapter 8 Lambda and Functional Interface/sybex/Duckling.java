@@ -1,7 +1,7 @@
 /*Method Reference
 
 LearnToSpeak interface only have 1 abstract method that take in one string
-So when you assign Lambda System.out::println, java know to pass the
+So when you assign Lambda System.out::println, java know to pass the first parameter
 
 */
 
