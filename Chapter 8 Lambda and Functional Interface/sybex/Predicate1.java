@@ -2,7 +2,7 @@
 
 Predicate is often used for filtering and matching
 
-takes 1 parameter and return premiive boolean
+takes 1 parameter and return primiive boolean
 
 @FunctionInterface
 

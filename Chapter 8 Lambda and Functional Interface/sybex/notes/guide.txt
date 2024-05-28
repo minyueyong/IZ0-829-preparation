@@ -42,12 +42,181 @@ Lambda Example :
 
  --------------------------------------------------------------------------------------------------
 
- Method References
+ Method References:
 
  10) LearnToSpeak interface
     - have 1 abstract method that take in a String
 
  11) Duckling
+    - passing a method reference to the interface
+    - the interface will know to take in String and pass into the method reference
+
+----------------------------------------------------------------------------------------------
+
+  Calling static Methods :
+
+  12) Converter interface
+    - take double and return long
+
+  13) staticReference
+    - round in Math class is a static method
+
+----------------------------------------------------------------------
+
+  Calling Instance Methods on a Particular Object
+
+  14) StringStart interface
+     - takes in a String and pass a boolean
+
+  15) objectReference
+     - we declare a String object and call instance method with it
+     - then pass it to the interface as method reference
+
+
+   16) StringChecker interface
+       - take no parameter and return a boolean
+
+   17) checkerReference
+
+--------------------------------------------------------------------
+
+  Calling Instance Methods on a Parameter:
+
+  18) StringParameterChecker interface
+      - take in a String and return a boolean
+
+  19) parameterReference
+      - we pass in a String to the method reference and java will know to use this String object to call instance method isEmpty
+
+   20) StringTwoParameterChecker interface
+       - take 2 String and return a boolean
+
+   21) twoParameterReference
+       - take one string to pass to object instance, take another string to pass to instance method
+
+---------------------------------------------------------------------------------------------
+
+   Calling Constructors:
+
+   22) EmptyStringCreator interface
+       - take no parameter and return String
+
+   23) constructorReference
+      - the abstract method will return a new String
+
+   24) StringCopier interface
+       - take in a String and return a String
+
+   25) constructorReference2
+       - pass in a String parameter and return that as a new String
+
+--------------------------------------------------------------------------------------
+
+Supplier: takes no parameter but return a value
+
+26) Supplier1
+
+27) Supplier2
+
+28) Supplier3
+
+--------------------------------------------------------------------------------
+
+Consumer & Biconsumer : take in a parameter and return nothing
+
+29) Consumer1
+       - take 1 String parameter and print it out
+
+30) Consumer2
+       - take 2 parameter and put it into the map
+
+-----------------------------------------------------------------------------
+
+Predicate & BiPredicate:  take 1 parameter and return primitive boolean
+
+31) Predicate1
+       - check if the String is empty
+
+32) Predicate2
+       - take 1 parameter as instance object , another parameter as parameter to the instance method
+
+-------------------------------------------------------------------------------
+
+Function & BiFunction: take in 1 parameter of a type and return a variable of a different type
+
+33) Function1
+    - take in String and return Integer
+
+34) Function2
+    - take in 2 Strings and return 1 String
+
+---------------------------------------------------------------------------------
+
+Unary Operator: parameter and return value must be of the same type
+
+35) UnaryOperator1
+
+-----------------------------------------------------------------------
+
+Binary Operator: Take 2 parameter and return 1 parameter. All are same type
+
+36) BinaryOperator1
+
+-------------------------------------------------------------------
+
+Using Convenience Methods on Functional Interfaces:
+
+37) convenience1
+    - combine 2 lambdas together using and() or negate() and assign to another Predicate
+
+38) convenience2
+    - pass same parameter to both Consumer and use andThen() to run them sequentially
+
+39) convenience3
+    - compose() pass output of 1 lambda into another as input
+
+40) convenience4
+    - Function andThen() pass the output of 1 lambda to another as input
+
+----------------------------------------------------------------------------
+
+Functional Interfaces for Boolean:
+
+41) BooleanSupplier1
+    -
+
+------------------------------------------------------
+
+Using local variables inside lambda body :
+
+42) lambdaBody1
+    - we cannot redeclare lambda parameter again inside the lambda body
+    - All parameters and variables declared before the lambda is in scope so you cannot use them again in lambda body
+
+--------------------------------------------------------
+
+Referencing Variables from the Lambda Body:
+
+43) lambdaBody2
+    - lambda can access instance variable , local variable and method parameter
+
+44) lambdaBody3
+    - Lambda Body can access instance and static variable
+    - Lambda Body can access local variable and method parameter if they are effectively final ( cannot reassign again after it is assign)
+
+ -----------------------------------------------------------------------------
+
+ 45) validLambda interface
+    - accept 1 String parameter and return boolean
+
+ 46) validLambdas
+
+ 47) validLambda2 interface
+    - accept 2 String parameter and return boolean
+
+ 48) validLambdas2
+
+
 
 
 

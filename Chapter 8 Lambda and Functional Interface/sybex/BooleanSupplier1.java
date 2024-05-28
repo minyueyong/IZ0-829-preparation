@@ -4,6 +4,8 @@ public interface BooleanSupplier{
     boolean getAsBoolean( );
 }
 
+return primitive boolean
+
  */
 
 package sybex;
